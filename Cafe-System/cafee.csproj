@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E7178E2B-A42A-4C94-94FF-815CD67D0641}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>final</RootNamespace>
+    <AssemblyName>final</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cafe.cs" />
+    <Compile Include="card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="card.Designer.cs">
+      <DependentUpon>card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer.Designer.cs">
+      <DependentUpon>customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBcafeeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBcafeeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBcafeeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBcafeeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBcafeeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBcafeeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intro.Designer.cs">
+      <DependentUpon>intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shop.Designer.cs">
+      <DependentUpon>shop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signin.Designer.cs">
+      <DependentUpon>signin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainform.Designer.cs">
+      <DependentUpon>mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="category.Designer.cs">
+      <DependentUpon>category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inventory.Designer.cs">
+      <DependentUpon>inventory.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="card.resx">
+      <DependentUpon>card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainform.resx">
+      <DependentUpon>mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intro.resx">
+      <DependentUpon>intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shop.resx">
+      <DependentUpon>shop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signin.resx">
+      <DependentUpon>signin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="category.resx">
+      <DependentUpon>category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="inventory.resx">
+      <DependentUpon>inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DBcafeeDataSet.xsc">
+      <DependentUpon>DBcafeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBcafeeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBcafeeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBcafeeDataSet.xss">
+      <DependentUpon>DBcafeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBcafeeDataSet1.xsc">
+      <DependentUpon>DBcafeeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBcafeeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBcafeeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBcafeeDataSet1.xss">
+      <DependentUpon>DBcafeeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBcafeeDataSet2.xsc">
+      <DependentUpon>DBcafeeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBcafeeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBcafeeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBcafeeDataSet2.xss">
+      <DependentUpon>DBcafeeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagee1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d Realistic People Icon vector Illustration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pastry Bakery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\latte art.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-12-19 at 8.08.03 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-12-19 at 8.08.03 PM1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Descargar Vectores, Imágenes, Fotos y Videos Gratis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue cream google classroom people icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-12-19 at 9.28.22 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-12-19 at 9.27.35 PM %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-12-19 at 9.27.35 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-12-19 at 9.27.36 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBcafeDataSet6.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DBcafee.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\WhatsApp Image 2025-12-27 at 10.26.55 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-12-27 at 12.47.29 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-12-27 at 12.47.29 PM %282%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-12-27 at 12.47.30 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-12-27 at 12.47.30 PM %282%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-12-27 at 12.47.30 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-12-27 at 12.47.29 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-12-19 at 8.08.03 PM2.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
